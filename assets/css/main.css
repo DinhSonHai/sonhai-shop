@@ -102,6 +102,10 @@
     display: block;
 }
 
+.header__navbar-item:hover .header__nav-notification {
+    display: block;
+}
+
 .header__nav-notification {
     width: 404px;
     position: absolute;
@@ -110,6 +114,29 @@
     color: var(--text-color);
     top: 115%;
     right: 0%;
+    display: none;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotification ease-in 0.25s;
+}
+
+.header__nav-notification::before {
+    content: "";
+    position: absolute;
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    left: 86%;
+    top: -29px;
+}
+
+.header__nav-notification::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    left: 0;
+    top: -16px;
 }
 
 .header__nav-notification-header {
@@ -119,12 +146,12 @@
 }
 
 .header__nav-notification-header h3 {
-    margin: 0 0 0 12px;
+    margin: 0;
     color: #999;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 40px;
-    
+    cursor: default;
 }
 
 .header__nav-notification-list {
@@ -134,6 +161,10 @@
 
 .header__nav-notification-item {
     width: 100%;
+}
+
+.header__nav-notification-item:hover {
+    background-color: #F7F7F7;
 }
 
 .header__nav-notification-item--viewed {
@@ -148,7 +179,6 @@
 .header__nav-notification-img {
     width: 15%;
     object-fit: contain;
-    
 }
 
 .header__nav-notification-body {
@@ -158,22 +188,26 @@
 .header__nav-notification-name {
     font-size: 1.4rem;
     font-weight: 400;
+    line-height: 1.8rem;
     margin: 0;
 }
 
 .header__nav-notification-description {
     color: #756F6E;
-    font-size: 1rem;
-    margin: 0;
-    line-height: 1.2rem;
+    font-size: 1.2rem;
+    margin: 4px 0 0 0;
+    line-height: 1.6rem;
 }
 
 .header__nav-notification-footer {
-    text-align: center;
+    display: flex;
 }
 
 .header__nav-notification-footer-btn {
+    width: 100%;
     text-decoration: none;
+    font-weight: 400;
     color: var(--text-color);
-    padding: 4px 16px;
+    padding: 4px 0;
+    text-align: center;
 }

@@ -6,12 +6,68 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="./assets/fonts/fontawesome-free-5.14.0-web/css/all.min.css" rel="stylesheet">
     </head>
-        Xin chào
     <body>
-        
+        <!-- BEM - Block Element Modifier-->
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-show">
+                                Vào cửa hàng trên ứng dụng SonHai-Shop
+                                <div class="header__qr">
+                                    <img src="./assets/img/qr_code.png" alt="QR Code" class="header__qr-img">
+                                    <div class="header__qr-download">
+                                        <a href="" class="header__qr-download-link">
+                                            <img src="./assets/img/qr_code_android.png" alt="Google Play" class="header__qr-download-img">
+                                        </a>
+                                        <a href="" class="header__qr-download-link">
+                                            <img src="./assets/img/qr_code_ios.png" alt="App Store" class="header__qr-download-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--seperate">|</li>
+                            <li class="header__navbar-item">
+                                Kết nối
+                            </li>
+                            <a href="https://www.facebook.com/dinhsonhai" class="header__navbar-icon-link" target="_blank">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fab fa-instagram"></i></a>
+                        </ul>
+    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fas fa-bell"></i>
+                                    Thông báo
+                                </a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon far fa-question-circle"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li class="header__navbar-item header__navbar-item-strong">Đăng ký</li>
+                            <li class="header__navbar-item header__navbar-item--seperate">|</li>
+                            <li class="header__navbar-item header__navbar-item-strong">Đăng nhập</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
 
-        </button>
+            <div class="container">
+
+            </div>
+
+            <footer class="footer">
+
+            </footer>
+        </div>
     </body>
 </html>

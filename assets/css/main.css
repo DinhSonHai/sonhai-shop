@@ -117,6 +117,7 @@
     display: none;
     transform-origin: calc(100% - 20px) top;
     animation: headerNotification ease-in 0.25s;
+    will-change: opacity, transform;
 }
 
 .header__nav-notification::before {

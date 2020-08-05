@@ -3,6 +3,7 @@
     --white-color: #FFF;
     --black-color: #000;
     --text-color: #333;
+    --border-color:  #DBDBDB;
 }
 
 * {
@@ -49,4 +50,35 @@ html {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.btn {
+    min-width: 142px;
+    height: unset;
+    padding: 10px 0;
+    margin: 
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disable {
+    color: #949494;
+    background-color: #C3C3C3;
+    cursor: default;
 }

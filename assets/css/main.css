@@ -384,11 +384,26 @@
 .header__cart {
     width: 150px;
     text-align: center;
+    position: relative;
 }
 
 .header__cart-icon {
     color: var(--white-color);
     font-size: 2rem;
+}
+
+.header__cart-list {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+.header__cart-empty-cart-img {
+    width: 60%;
 }
 
 .header__search-input-wrap {
@@ -451,6 +466,7 @@
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--text-color);
+    width: 100%;
 }
 
 .header__search-history-item:last-child {

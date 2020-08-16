@@ -42,6 +42,86 @@
     margin: 0 1px;
 }
 
+.header__navbar-user {
+
+}
+
+.header__navbar-user:hover .header__navbar-user-menu {
+    display: block;
+}
+
+.header__navbar-user-img {
+    width: 20px;
+    vertical-align: text-bottom;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__navbar-user-name {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.header__navbar-user-menu {
+    width: 160px;
+    position: absolute;
+    padding: 0;
+    top: calc(100% + 4px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;
+    z-index: 2;
+    box-shadow: 0 1px 2px #E0E0E0;
+    display: none;
+}
+
+.header__navbar-user-menu::before {
+    content: "";
+    position: absolute;
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 4px;
+    top: -29px;
+}
+
+.header__navbar-user-menu::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -8px;
+    right: 0;
+    width: 100%;
+    height: 8px;
+}
+
+.header__navbar-user-item {
+    padding: 4px 16px;
+}
+
+.header__navbar-user-item a {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+
+.header__navbar-user-item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.header__navbar-user-item:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.header__navbar-user-item:hover {
+    background-color: #FAFAFA;
+}
+
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
@@ -66,6 +146,7 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.5s;
+    z-index: 2;
 }
 
 .header__qr::before {
@@ -121,6 +202,7 @@
     transform-origin: calc(100% - 20px) top;
     animation: headerNotification ease-in 0.25s;
     will-change: opacity, transform;
+    z-index: 2;
 }
 
 .header__nav-notification::before {
@@ -368,8 +450,8 @@
 }
 
 .header__logo-img {
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
 }
 
 .header__search {
@@ -410,7 +492,7 @@
     color: var(--primary-color);
     background-color: var(--white-color);
     border-radius: 50%;
-    border: 2px solid #EE2D4D;
+    border: 1px solid #EE2D4D;
     top: -15px;
     right: -2px;
 }

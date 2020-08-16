@@ -57,8 +57,13 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+hr {
+    margin: 0;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -194,12 +199,13 @@
     width: 404px;
     position: absolute;
     background-color: var(--white-color);
-    border: 1px solid #D3D3D3;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
     color: var(--text-color);
     top: 115%;
     right: 0%;
     display: none;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotification ease-in 0.25s;
     will-change: opacity, transform;
     z-index: 2;
@@ -447,6 +453,11 @@
 .header__logo {
     width: 150px;
     height: 54px;
+}
+
+.header__logo-link {
+    text-decoration: none;
+    color: transparent;
 }
 
 .header__logo-img {
@@ -735,7 +746,7 @@
     width: 130px;
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(100% - 1px);
     box-shadow: 0 1px 2px #E0E0E0;
     padding-left: 0;
     display: none;
